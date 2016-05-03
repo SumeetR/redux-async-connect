@@ -11,7 +11,7 @@
     "build": "babel ./modules -d lib --ignore '__tests__'",
     "lint": "eslint modules",
     "start": "babel-node example/server.js",
-    "test": "npm run lint && karma start",
+    "test": "karma start",
     "prepublish": "node ./npm-scripts/postinstall.js"
   },
   "keywords": [
@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/Rezonans/redux-async-connect",
   "peerDependencies": {
-    "react": "0.14.x",
+    "react": "^0.14.0 || ^15.0.0",
     "react-router": "2.x.x",
     "react-redux": "4.x.x"
   },
@@ -59,7 +59,7 @@
     "pretty-bytes": "^2.0.1",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
-    "react-router": "2.0.0-rc5",
+    "react-router": "2.0.0",
     "rimraf": "^2.4.2",
     "webpack": "^1.12.6",
     "webpack-dev-middleware": "^1.2.0",
